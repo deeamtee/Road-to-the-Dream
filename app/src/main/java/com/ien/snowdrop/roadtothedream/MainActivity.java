@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         //getting bottom navigation view and attaching the listener
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
+        BottomNavigationViewHelper.disableShiftMode(navigation);
     }
 
     @Override
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
             case R.id.navigation_music:
                 fragment = new MusicFragment();
+                break;
+            case R.id.navigation_android:
+                fragment = new AndroidFragment();
+                break;
+            case R.id.navigation_smartphone:
+                fragment = new PhoneFragment();
+                break;
+            case R.id.navigation_notifications:
+                fragment = new NotificationFragment();
                 break;
 
         }
