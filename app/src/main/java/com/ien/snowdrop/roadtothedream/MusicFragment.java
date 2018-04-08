@@ -81,7 +81,7 @@ public class MusicFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            Toast.makeText(context, "Musci_Fragment Attached", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Music Fragment Attached", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -106,4 +106,3 @@ public class MusicFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 }
-//lol
