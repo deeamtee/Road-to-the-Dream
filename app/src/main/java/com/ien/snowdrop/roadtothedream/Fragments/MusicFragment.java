@@ -1,4 +1,4 @@
-package com.ien.snowdrop.roadtothedream;
+package com.ien.snowdrop.roadtothedream.Fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -7,7 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+
+import com.ien.snowdrop.roadtothedream.R;
 
 
 /**
@@ -81,7 +82,7 @@ public class MusicFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            Toast.makeText(context, "Music Fragment Attached", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(context, "Music Fragment Attached", Toast.LENGTH_SHORT).show();
         }
     }
 

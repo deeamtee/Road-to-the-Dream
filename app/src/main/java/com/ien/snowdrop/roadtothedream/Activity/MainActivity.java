@@ -1,4 +1,4 @@
-package com.ien.snowdrop.roadtothedream;
+package com.ien.snowdrop.roadtothedream.Activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,6 +6,14 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
+import com.ien.snowdrop.roadtothedream.BottomNavigationViewHelper;
+import com.ien.snowdrop.roadtothedream.Fragments.AndroidFragment;
+import com.ien.snowdrop.roadtothedream.Fragments.HomeFragment;
+import com.ien.snowdrop.roadtothedream.Fragments.MusicFragment;
+import com.ien.snowdrop.roadtothedream.Fragments.NotificationFragment;
+import com.ien.snowdrop.roadtothedream.Fragments.PhoneFragment;
+import com.ien.snowdrop.roadtothedream.R;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
