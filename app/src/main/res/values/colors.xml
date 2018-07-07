@@ -7,7 +7,7 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorSnow">#ededed</color>
-    <color name="colorDivider">#2FE897</color>
+    <color name="colorDivider">#2fe897</color>
     <color name="colorBorder">#a7a4a4</color>
     <color name="colorExtra">#fffac1</color>
 </resources>

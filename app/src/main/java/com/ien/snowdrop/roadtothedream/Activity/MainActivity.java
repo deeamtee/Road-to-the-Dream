@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.ien.snowdrop.roadtothedream.BottomNavigationViewHelper;
@@ -29,6 +30,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
         BottomNavigationViewHelper.disableShiftMode(navigation);
+
+        //Toolbar_main
+
+        Toolbar toolbar_main = (Toolbar) findViewById(R.id.toolbar_main);
+        toolbar_main.setTitle(R.string.title_toolbar_home);
+        setSupportActionBar(toolbar_main);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
     @Override
@@ -69,5 +79,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return false;
     }
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
 }
 

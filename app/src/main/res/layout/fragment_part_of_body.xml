@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PartOfBodyFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btn_chest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/element_background"
+            android:drawableLeft="@drawable/ic_fitness_center_black_48dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Грудь"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/element_background"
+            android:drawableLeft="@drawable/ic_whatshot_black_48dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Спина"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_legs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/element_background"
+            android:drawableLeft="@drawable/ic_flash_on_black_48dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Ноги"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+</FrameLayout>
