@@ -23,13 +23,15 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
 
+
+
             <ImageView
                 android:id="@+id/imgBar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/man"
                 android:fitsSystemWindows="true"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/man" />
             <!--  android:fitsSystemWindows="true"  Прозрачность statusBar. Работает при версиях android 5.0+ -->
 
             <android.support.v7.widget.Toolbar

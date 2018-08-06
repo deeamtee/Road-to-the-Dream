@@ -61,7 +61,24 @@ public class PartOfBodyFragment extends Fragment implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
-        Intent intent;
+        Fragment fragment = null;
+
+        switch (view.getId()) {
+            case R.id.btn_chest:
+                fragment = new ChestFragment();
+                break;
+            case R.id.btn_back:
+                fragment = new ChestFragment();
+                break;
+        }
+
+        if (fragment != null) {
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
+                    .commit();
+        }
+        /*Intent intent;
         switch (view.getId()){
             case R.id.btn_chest:
                 intent = new Intent(super.getActivity(), ManActivity.class);
@@ -75,7 +92,7 @@ public class PartOfBodyFragment extends Fragment implements View.OnClickListener
                 intent = new Intent(super.getActivity(), ManProgramActivity.class);
                 getActivity().startActivity(intent);
                 break;
-        }
+        }*/
 
     }
 }

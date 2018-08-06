@@ -9,11 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.ien.snowdrop.roadtothedream.BottomNavigationViewHelper;
-import com.ien.snowdrop.roadtothedream.Fragments.AndroidFragment;
+
 import com.ien.snowdrop.roadtothedream.Fragments.HomeFragment;
-import com.ien.snowdrop.roadtothedream.Fragments.MusicFragment;
-import com.ien.snowdrop.roadtothedream.Fragments.NotificationFragment;
-import com.ien.snowdrop.roadtothedream.Fragments.PhoneFragment;
+import com.ien.snowdrop.roadtothedream.Fragments.HwasFragment;
+import com.ien.snowdrop.roadtothedream.Fragments.Shop_Fragment;
 import com.ien.snowdrop.roadtothedream.R;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -33,12 +32,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         //Toolbar_main
 
-        Toolbar toolbar_main = (Toolbar) findViewById(R.id.toolbar_main);
+       /* Toolbar toolbar_main = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar_main.setTitle(R.string.title_toolbar_home);
-        setSupportActionBar(toolbar_main);
+        setSupportActionBar(toolbar_main);*/
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+    /*    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);*/
     }
 
     @Override
@@ -50,19 +49,19 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new HomeFragment();
                 break;
 
-            case R.id.navigation_music:
-                fragment = new MusicFragment();
+            case R.id.navigation_shop:
+                fragment = new Shop_Fragment();
                 break;
-            case R.id.navigation_android:
-                fragment = new AndroidFragment();
+           case R.id.navigation_program:
+                fragment = new HwasFragment();
                 break;
-            case R.id.navigation_smartphone:
+           /* case R.id.navigation_smartphone:
                 fragment = new PhoneFragment();
                 break;
             case R.id.navigation_notifications:
                 fragment = new NotificationFragment();
                 break;
-
+*/
         }
 
         return loadFragment(fragment);
